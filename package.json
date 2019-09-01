@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rdazvd/muon/issues"
   },
-  "homepage": "https://github.com/rdazvd/muon#readme"
+  "homepage": "https://github.com/rdazvd/muon#readme",
+  "dependencies": {
+    "colorette": "^1.1.0"
+  }
 }
