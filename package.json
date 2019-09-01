@@ -1,0 +1,20 @@
+{
+  "name": "muon",
+  "version": "0.1.0",
+  "description": "a nano-like command line text editor written in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdazvd/muon.git"
+  },
+  "keywords": [],
+  "author": "Rafael de Azevedo",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/rdazvd/muon/issues"
+  },
+  "homepage": "https://github.com/rdazvd/muon#readme"
+}
