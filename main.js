@@ -1,14 +1,19 @@
 #!/usr/bin/env node
 
-const argument = process.argv[2];
-const fs = require("fs");
 const { blue, yellow } = require("colorette");
+const fs = require("fs");
+const readline = require("readline");
 
-const handleFile = fileName =>
+const argument = process.argv[2];
+
+const createFileBuffer = (fileContents = "") =>
+  Buffer.from(fileContents, "utf8");
+
+const handleFile = (fileName = "") => {
   fs.open(fileName, "w", error => {
     if (error) throw error;
   });
-
+};
 const showAbout = () => {
   const aboutText = `
     ${blue("muon")}${yellow(", a nano text editor")}
