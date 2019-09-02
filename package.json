@@ -1,6 +1,6 @@
 {
   "name": "muon-editor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a nano-like text editor written in node.js",
   "main": "main.js",
   "scripts": {
