@@ -1,7 +1,7 @@
 {
   "name": "muon",
   "version": "0.0.1",
-  "description": "a nano-like command line text editor written in node.js",
+  "description": "a nano-like text editor written in node.js",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
