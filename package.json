@@ -1,5 +1,5 @@
 {
-  "name": "muon",
+  "name": "muon-editor",
   "version": "0.0.1",
   "description": "a nano-like text editor written in node.js",
   "main": "main.js",
