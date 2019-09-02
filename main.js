@@ -11,9 +11,9 @@ const handleFile = fileName =>
 
 const showAbout = () => {
   const aboutText = `
-    ${blue("muon")}${yellow(", a minimal text editor")}
+    ${blue("muon")}${yellow(", a nano text editor")}
 
-    version 0.1
+    version 0.0.1
     Developed and mantained by Rafael de Azevedo
     Released under the Unlicense License
   `;
