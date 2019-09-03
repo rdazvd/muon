@@ -6,21 +6,32 @@ const readline = require("readline");
 
 const argument = process.argv[2];
 
-const createFileBuffer = (fileContents = "") =>
-  Buffer.from(fileContents, "utf8");
+const handleFile = fileName => {
+  // const createFileBuffer = (fileContents = "") =>
+  //   Buffer.from(fileContents, "utf8");
 
-const handleFile = (fileName = "") => {
-  fs.open(fileName, "w", error => {
+  // const fileContents = fs.readFile(fileName, (error, data) => {
+  //   if (error) throw error;
+  //   return data;
+  // });
+
+  const fileBuffer = createFileBuffer(fileContents);
+
+  const fileDescriptor = fs.openSync(fileName, "w", (error, data) => {
     if (error) throw error;
+    return data;
   });
 };
+
 const showAbout = () => {
+  const versionNumber = require("./package.json").version;
   const aboutText = `
     ${blue("muon")}${yellow(", a nano text editor")}
 
-    version 0.0.1
+    version ${versionNumber}
     Developed and mantained by Rafael de Azevedo
-    Released under the Unlicense License
+    Released under the Unlicense License:
+    https://unlicense.org/
   `;
   console.log(aboutText);
 };
