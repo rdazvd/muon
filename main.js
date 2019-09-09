@@ -7,6 +7,11 @@ const readline = require("readline");
 const argument = process.argv[2];
 
 const handleFile = fileName => {
+  const setCallback = (error, data, action) => {
+    if (error) throw error;
+    return action(data);
+  };
+
   // const createFileBuffer = (fileContents = "") =>
   //   Buffer.from(fileContents, "utf8");
 
@@ -15,12 +20,13 @@ const handleFile = fileName => {
   //   return data;
   // });
 
-  const fileBuffer = createFileBuffer(fileContents);
+  // const fileBuffer = createFileBuffer(fileContents);
 
-  const fileDescriptor = fs.openSync(fileName, "w", (error, data) => {
-    if (error) throw error;
-    return data;
-  });
+  const fileDescriptor = fs.openSync(
+    fileName,
+    "w",
+    setCallback(error, fileContents, text => console.log(text))
+  );
 };
 
 const showAbout = () => {

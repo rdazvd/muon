@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/rdazvd/muon.git"
   },
-  "keywords": [],
+  "keywords": [
+    "editor",
+    "nano",
+    "muon",
+    "text"
+  ],
   "author": "Rafael de Azevedo",
   "license": "Unlicense",
   "bugs": {
